@@ -1,0 +1,8 @@
+# HTTP requests for NBU API
+requests
+# DataFrame operations
+pandas
+# Numerical operations and statistics
+numpy
+# Pretty table formatting
+tabulate
