@@ -70,21 +70,23 @@ python3 main.py
 
 - Docker installed on your system
 
-1. 
+1. Pull the image from Docker Hub
+```bash
+docker pull hellcat888/currency_rates_cli
+```
 
-2. 
-
-3. 
-
-4. 
-
-5. 
-docker run -it --rm hellcat888/currency_rates_cli
-
+OPTIONAL (if you want CSV saving capability)
+```bash
 mkdir -p data
 docker run -it --rm \
-  -v "$(pwd)/data:/app/data" \
-  hellcat888/currency_rates_cli
+    -v "$(pwd)/data:/app/data" \
+    hellcat888/currency_rates_cli
+```
+
+2. Run with interactive flag (-it) and container auto-removal (--rm)
+```bash
+docker run -it --rm hellcat888/currency_rates_cli
+```
 
 ### How to Use
 
